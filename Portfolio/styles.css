@@ -99,12 +99,13 @@ header {
     font-weight: 600;
     font-size: 1rem;
     color: #212431;
-    transition: all 0.2s ease 0s;
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.full-nav div:nth-child(3) a:hover {
+.full-nav div:nth-child(3) a:hover, .full-nav div:nth-child(3) a:focus {
 
-    color: #ea5c1f;
+    transform: scale(1.15);
+    color: #f15f20;
 }
 
 /* MAIN */
@@ -128,6 +129,7 @@ header {
 .intro-contact h1{
 
     text-align: center;
+    margin-top: 1.6rem;
 }
 
 .underline {
@@ -226,7 +228,7 @@ footer div:nth-child(3) i {
 .form {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.64fr 1fr;
     justify-items: center;
     align-content: center;
 
@@ -243,12 +245,17 @@ footer div:nth-child(3) i {
 .contact-grid-left {
 
     background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-grid-left h2 {
 
     font-size: 4rem;
     color: #212431;
+    margin: 0;
 
     text-align: center;
 }
@@ -265,13 +272,81 @@ footer div:nth-child(3) i {
 
 .contact-grid-right h2 {
 
+    margin: 0;
+    margin-bottom: 1.6rem;
     font-size: 4rem;
     color: #212431;
 
     text-align: center;
+}
+
+.contact-grid-right {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contact-input {
+
+    margin-bottom: 1.2rem;
+    width: 32rem;
+    height: 2rem;
+    padding: 0.2rem 0.8rem;
+
+    background-color: #ebebeb;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-input:hover, .contact-input:focus {
+
+    transform: scale(1.2);
+}
+
+.contact-button {
+
+    margin: 1.2rem 0;
+    padding: 0.6rem 1.8rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #ea5c1f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 0.92rem;
+    cursor: pointer;
+
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-button:hover, .contact-button:focus {
+
+    transform: scale(1.18);
+}
+
+.contact-button:active {
+
+    background-color: #ea5c1fc5;
+}
+
+#message-contact {
+
+    background-color: #292e41;
+    color: #d6d7d7;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    padding: 0.2rem 0.8rem;
+
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#message-contact:hover, #message-contact:focus {
+
+    transform: scale(1.1);
 }
