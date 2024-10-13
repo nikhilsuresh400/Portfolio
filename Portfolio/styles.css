@@ -206,12 +206,12 @@ footer div:nth-child(3) i {
 .fa-brands {
 
     color: #d6d7d7;
-    transition: all 0.2s ease 0s;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
 .fa-brands:hover {
 
-    color: #ea5c1f;
+    transform: scale(1.2);
 }
 
 
@@ -304,7 +304,7 @@ footer div:nth-child(3) i {
 
 .contact-input:hover, .contact-input:focus {
 
-    transform: scale(1.2);
+    transform: scale(1.16);
 }
 
 .contact-button {
@@ -330,16 +330,15 @@ footer div:nth-child(3) i {
 
 .contact-button:active {
 
-    background-color: #ea5c1fc5;
+    background-color: #ea5c1fd0;
 }
 
 #message-contact {
 
-    background-color: #292e41;
-    color: #d6d7d7;
+    background-color: #ebebeb;
     border: none;
     outline: none;
-    border-radius: 6px;
+    border-radius: 4px;
     margin: 0.5rem 0;
     padding: 0.2rem 0.8rem;
 
