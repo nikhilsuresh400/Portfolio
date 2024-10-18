@@ -2,6 +2,8 @@
 
     font-family: "Assistant", sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -134,13 +136,13 @@ header {
 .intro-home h1 {
 
     text-align: left;
-    margin: 10rem 0;
+    margin: 4rem 0 24rem;
 }
 
 .intro-contact h1{
 
     text-align: center;
-    margin-top: 1.6rem;
+    margin: 3.2rem 0;
 }
 
 .underline {
@@ -148,6 +150,22 @@ header {
     text-decoration: underline;
     text-decoration-color: #ea5c1f;
 }
+
+/* Experience */
+.exp-home {
+
+    margin: 1.6rem 0;
+    background-color: #212431;
+    color: #f5f5f5;
+    padding: 3.2rem;
+}
+
+.exp-home div:first-child h1 {
+
+    font-size: 5.6rem;
+    text-align: center;
+}
+
 
 /* About Me */
 .aboutMe-home {
@@ -179,7 +197,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 1.6rem;
     padding: 1.2rem;
-    width: 40%;
+    width: 32%;
 
     border-right: solid 3px #d6d7d7;
 }
@@ -196,6 +214,16 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.aboutMe-flex-left div p {
+
+    margin-top: 1.2rem;
+}
+
+.aboutMe-flex-left h2 {
+
+    margin-top: 0.8rem;
 }
 
 .aboutMe-flex-right {
